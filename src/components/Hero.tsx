@@ -35,11 +35,13 @@ export default function Hero() {
             <div
               style={{
                 width: "164px",
-                background: "#ffffff69",
-                borderRadius: "50%",
+                // background: "#ffffff69",
+                // borderRadius: "50%",
                 padding: "15px",
                 boxShadow: "1px 1px 8px 4px #f97316",
               }}
+
+              className='bg-white/50 backdrop-blur-sm border border-white/20 rounded-full p-6 shadow-2xl'
             >
               <img
                 src={Logo}
