@@ -1,5 +1,6 @@
-import { Shield, ArrowRight } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import Banner from "../assets/banner/banner.png";
+import Logo from "../assets/lgo.png";
 
 export default function Hero() {
   return (
@@ -30,8 +31,21 @@ export default function Hero() {
       <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center text-center">
           <div className="mb-8 animate-float">
-            <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full p-6 shadow-2xl">
-              <Shield className="w-20 h-20 text-white" strokeWidth={1.5} />
+            {/* <div className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-full p-6 shadow-2xl"> */}
+            <div
+              style={{
+                width: "164px",
+                background: "#ffffff69",
+                borderRadius: "50%",
+                padding: "15px",
+                boxShadow: "1px 1px 8px 4px #f97316",
+              }}
+            >
+              <img
+                src={Logo}
+                alt="CyberVenture Logo"
+                className="w-75 h-75 object-contain"
+              />
             </div>
           </div>
 
