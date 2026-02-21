@@ -3,18 +3,18 @@ import Banner from "../assets/banner/banner.png";
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-orange-600 via-orange-500 to-red-600">
-      
-        {/* 🔥 Background Image Layer */}
-  <div
-    className="absolute inset-0 bg-center bg-cover opacity-20"
-    style={{
-      backgroundImage: `url(${Banner})`,
-    }}
-  ></div>
+    <section id="home" style={{ top: '55px' }} className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gradient-to-br from-orange-600 via-orange-500 to-red-600">
 
-  {/* 🔥 Dark overlay for readability */}
-  <div className="absolute inset-0 bg-black/40"></div>
+      {/* 🔥 Background Image Layer */}
+      <div
+        className="absolute inset-0 bg-center bg-cover opacity-20"
+        style={{
+          backgroundImage: `url(${Banner})`,
+        }}
+      ></div>
+
+      {/* 🔥 Dark overlay for readability */}
+      <div className="absolute inset-0 bg-black/40"></div>
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
           backgroundImage: `
@@ -44,7 +44,7 @@ export default function Hero() {
           <p className="text-xl md:text-2xl text-white/90 mb-12 max-w-3xl">
             CyberVenture is an international platform uniting cybersecurity innovators, AI security experts, privacy leaders, founders, venture capitalists, CISOs, and technology executives shaping the future of digital trust.
 
-We empower collaboration, accelerate innovation, and foster strategic partnerships across the global cybersecurity ecosystem.
+            We empower collaboration, accelerate innovation, and foster strategic partnerships across the global cybersecurity ecosystem.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4">
