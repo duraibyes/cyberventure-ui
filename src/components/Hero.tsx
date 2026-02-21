@@ -77,15 +77,15 @@ export default function Hero() {
           <div className="mt-16 grid grid-cols-3 gap-8 md:gap-16">
             <div className="text-white">
               <div className="text-4xl md:text-5xl font-bold mb-2">10K+</div>
-              <div className="text-white/80 text-sm md:text-base">Threats Blocked</div>
+              <div className="text-orange-600 text-sm md:text-base">Threats Blocked</div>
             </div>
             <div className="text-white">
               <div className="text-4xl md:text-5xl font-bold mb-2">500+</div>
-              <div className="text-white/80 text-sm md:text-base">Enterprise Clients</div>
+              <div className="text-orange-600 text-sm md:text-base">Enterprise Clients</div>
             </div>
             <div className="text-white">
               <div className="text-4xl md:text-5xl font-bold mb-2">99.9%</div>
-              <div className="text-white/80 text-sm md:text-base">Uptime</div>
+              <div className="text-orange-600 text-sm md:text-base">Uptime</div>
             </div>
           </div>
         </div>
