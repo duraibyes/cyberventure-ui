@@ -30,34 +30,33 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="font-bold text-lg mb-4">Solutions</h4>
+            {/* <h4 className="font-bold text-lg mb-4">Solutions</h4>
             <ul className="space-y-3">
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Threat Detection</a></li>
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Event Monitoring</a></li>
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Risk Analysis</a></li>
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Incident Response</a></li>
-            </ul>
+            </ul> */}
           </div>
-
           <div>
-            <h4 className="font-bold text-lg mb-4">Company</h4>
-            <ul className="space-y-3">
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">About Us</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Careers</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Blog</a></li>
-              <li><a href="#" className="text-white/80 hover:text-white transition-colors">Partners</a></li>
-            </ul>
-          </div>
-
-          <div>
-            <h4 className="font-bold text-lg mb-4">Resources</h4>
+            {/* <h4 className="font-bold text-lg mb-4">Resources</h4>
             <ul className="space-y-3">
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Documentation</a></li>
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">API Reference</a></li>
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Support</a></li>
               <li><a href="#" className="text-white/80 hover:text-white transition-colors">Security</a></li>
+            </ul> */}
+          </div>
+          <div>
+            <h4 className="font-bold text-lg mb-4">Company</h4>
+            <ul className="space-y-3">
+              <li><a href="#home" className="text-white/80 hover:text-white transition-colors">Home</a></li>
+              <li><a href="#event" className="text-white/80 hover:text-white transition-colors">Event</a></li>
+              <li><a href="#membership" className="text-white/80 hover:text-white transition-colors">Membership</a></li>
             </ul>
           </div>
+
+
         </div>
 
         <div className="border-t border-white/20 pt-8">

@@ -1,56 +1,8 @@
-import { Check, Sparkles } from 'lucide-react';
-
-const plans = [
-  {
-    name: 'Basic',
-    price: '99',
-    description: 'Perfect for small teams getting started with enterprise security',
-    features: [
-      'Up to 50 monitored endpoints',
-      'Basic threat detection',
-      'Email support',
-      '30-day log retention',
-      'Weekly security reports',
-      'Single user account'
-    ],
-    highlighted: false
-  },
-  {
-    name: 'Supporter',
-    price: '299',
-    description: 'Advanced protection for growing businesses',
-    features: [
-      'Up to 500 monitored endpoints',
-      'AI-powered threat detection',
-      'Priority 24/7 support',
-      '90-day log retention',
-      'Real-time security alerts',
-      'Up to 10 user accounts',
-      'Custom compliance reports',
-      'API access'
-    ],
-    highlighted: true,
-    badge: 'Most Popular'
-  },
-  {
-    name: 'Enterprise',
-    price: 'Custom',
-    description: 'Complete security solution for large organizations',
-    features: [
-      'Unlimited monitored endpoints',
-      'Advanced AI threat intelligence',
-      'Dedicated security team',
-      'Unlimited log retention',
-      'Custom integrations',
-      'Unlimited user accounts',
-      'White-label options',
-      'SLA guarantees'
-    ],
-    highlighted: false
-  }
-];
+import { useState } from "react";
+import MemberRegistrationDialog from "./MemberRegistrationDialog";
 
 export default function Pricing() {
+  const [openMemberRegister, setOpenMemberRegister] = useState(false);
   return (
     <section id="membership" className="py-24 bg-white">
       <div className="container mx-auto px-6">
@@ -62,8 +14,21 @@ export default function Pricing() {
             CyberVenture offers exclusive membership programs designed to empower professionals at every stage of their cybersecurity journey.
           </p>
         </div>
+        <div className="flex justify-center ">
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
+          <button className="px-10 py-4 
+                             bg-gradient-to-r from-orange-500 to-red-600
+                             text-white font-semibold 
+                             rounded-xl shadow-md
+                             transition-all duration-300
+                             hover:scale-105 hover:shadow-lg"
+            onClick={() => setOpenMemberRegister(true)}
+          >
+            Apply Membership
+          </button>
+        </div>
+
+        {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
           {plans.map((plan, index) => (
             <div
               key={index}
@@ -145,7 +110,11 @@ export default function Pricing() {
               </button>
             </div>
           ))}
-        </div>
+        </div> */}
+        <MemberRegistrationDialog
+          open={openMemberRegister}
+          onClose={() => setOpenMemberRegister(false)}
+        />
       </div>
     </section>
   );

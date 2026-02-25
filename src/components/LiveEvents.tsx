@@ -33,7 +33,7 @@ const moreEvents = [
 
 export default function EventsPage() {
   return (
-    <section className="relative py-28 bg-gradient-to-br from-black via-red-900 to-orange-900 overflow-hidden">
+    <section id="event" className="relative py-20 bg-gradient-to-br from-black via-red-900 to-orange-900 overflow-hidden">
 
       {/* Background Glow */}
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-orange-500 blur-[150px] opacity-20 rounded-full"></div>
@@ -42,7 +42,7 @@ export default function EventsPage() {
       <div className="container mx-auto px-6">
 
         {/* HEADER */}
-        <div className="text-center mb-20">
+        <div className="text-center mb-10">
           <h2 className="text-4xl md:text-5xl font-bold text-white  mb-6">
             CyberVenture Events
           </h2>
@@ -53,7 +53,7 @@ export default function EventsPage() {
         </div>
 
         {/* FEATURED EVENT */}
-        <div className="relative bg-white border border-orange-200 rounded-3xl p-10 mb-20 shadow-xl overflow-hidden">
+        <div className="relative bg-white border border-orange-200 rounded-3xl p-10 mb-5 shadow-xl overflow-hidden">
 
           {/* Accent Top Bar */}
           <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-orange-500 to-red-600"></div>
@@ -89,7 +89,7 @@ export default function EventsPage() {
 
             {/* CTA */}
             <div>
-              <a
+              {/* <a
                 href={upcomingEvent.link}
                 className="inline-flex items-center gap-2 px-8 py-4 
                            bg-gradient-to-r from-orange-500 to-red-600 
@@ -99,13 +99,13 @@ export default function EventsPage() {
               >
                 Register Now
                 <ArrowRight className="w-4 h-4" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
 
         {/* MORE EVENTS */}
-        <div className="grid md:grid-cols-3 gap-10">
+        {/* <div className="grid md:grid-cols-3 gap-10">
           {moreEvents.map((event, index) => (
             <div
               key={index}
@@ -145,7 +145,7 @@ export default function EventsPage() {
               </button>
             </div>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

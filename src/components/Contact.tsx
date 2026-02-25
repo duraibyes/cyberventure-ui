@@ -71,20 +71,44 @@ export default function Contact() {
             <form className="bg-white border-2 border-gray-200 rounded-2xl p-8 shadow-lg">
               <div className="mb-6">
                 <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
-                  Full Name *
+                  First Name *
                 </label>
                 <input
                   type="text"
                   id="name"
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-orange-500 focus:outline-none transition-colors"
-                  placeholder="John Doe"
+                  placeholder="John"
+                  required
+                />
+              </div>
+              <div className="mb-6">
+                <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
+                  Last Name *
+                </label>
+                <input
+                  type="text"
+                  id="lastname"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-orange-500 focus:outline-none transition-colors"
+                  placeholder="Doa"
+                  required
+                />
+              </div>
+              <div className="mb-6">
+                <label htmlFor="name" className="block text-sm font-semibold text-gray-900 mb-2">
+                  LinkedIn Profile *
+                </label>
+                <input
+                  type="text"
+                  id="linkedin"
+                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-orange-500 focus:outline-none transition-colors"
+                  placeholder="https://www.linkedin.com/in/your-profile"
                   required
                 />
               </div>
 
               <div className="mb-6">
                 <label htmlFor="email" className="block text-sm font-semibold text-gray-900 mb-2">
-                  Email Address *
+                  Email Address * (for Zoom links)
                 </label>
                 <input
                   type="email"
@@ -92,18 +116,6 @@ export default function Contact() {
                   className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-orange-500 focus:outline-none transition-colors"
                   placeholder="john@company.com"
                   required
-                />
-              </div>
-
-              <div className="mb-6">
-                <label htmlFor="company" className="block text-sm font-semibold text-gray-900 mb-2">
-                  Company Name
-                </label>
-                <input
-                  type="text"
-                  id="company"
-                  className="w-full px-4 py-3 border-2 border-gray-300 rounded-lg focus:border-orange-500 focus:outline-none transition-colors"
-                  placeholder="Your Company Inc."
                 />
               </div>
 

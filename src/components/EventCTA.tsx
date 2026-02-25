@@ -1,8 +1,31 @@
 import { useState } from "react";
 import SpeakerSponsorDialog from "./SpeakerSponsorDialog";
+import SponsorDialog from "./SponsorDialog";
 
 export default function EventCTA() {
-    const [openType, setOpenType] = useState<"speaker" | "sponsor" | null>(null);
+    const [openSpeakerDialog, setOpenSpeakerDialog] = useState(false);
+    const [openSponsorDialog, setOpenSponsorDialog] = useState(false);
+
+    const onSpeakerClose = () => {
+        setOpenSpeakerDialog(false);
+        setOpenSponsorDialog(false);
+    }
+
+    const onSponsorClose = () => {
+        setOpenSponsorDialog(false);
+        setOpenSpeakerDialog(false);
+    }
+
+    const onOpenSpeakerDialog = () => {
+        setOpenSpeakerDialog(true);
+        setOpenSponsorDialog(false);
+    }
+
+    const onOpenSponsorDialog = () => {
+        setOpenSponsorDialog(true);
+        setOpenSpeakerDialog(false);
+    }
+
     return (
         <section className="py-24 bg-white">
 
@@ -26,7 +49,7 @@ export default function EventCTA() {
                              rounded-xl shadow-md
                              transition-all duration-300
                              hover:scale-105 hover:shadow-lg"
-                        onClick={() => setOpenType("speaker")}
+                        onClick={onOpenSpeakerDialog}
                     >
                         Apply as Speaker
                     </button>
@@ -41,18 +64,21 @@ export default function EventCTA() {
                              hover:from-orange-500 
                              hover:to-red-600
                              hover:text-white hover:scale-105"
-                        onClick={() => setOpenType("sponsor")}
+                        onClick={onOpenSponsorDialog}
                     >
-                        Partner With Us
+                        Apply as Sponsor
                     </button>
 
                 </div>
 
             </div>
             <SpeakerSponsorDialog
-                open={openType !== null}
-                type={openType as any}
-                onClose={() => setOpenType(null)}
+                open={openSpeakerDialog}
+                onClose={onSpeakerClose}
+            />
+            <SponsorDialog
+                open={openSponsorDialog}
+                onClose={onSponsorClose}
             />
         </section>
     );
