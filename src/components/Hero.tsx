@@ -56,7 +56,7 @@ export default function Hero() {
               <span className="text-orange-400">A Global Forum for Cybersecurity, AI Security & Privacy Leaders</span>
             </h2>
 
-            <p className="text-xl md:text-2xl text-white mb-12 max-w-3xl text-center">
+            <p className="text-xl md:text-2xl text-white mb-3 max-w-3xl text-center">
               CyberVenture is an international platform uniting cybersecurity innovators, AI security experts, privacy leaders, founders, venture capitalists, CISOs, and technology executives shaping the future of digital trust.
 
               We empower collaboration, accelerate innovation, and foster strategic partnerships across the global cybersecurity ecosystem.

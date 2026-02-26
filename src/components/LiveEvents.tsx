@@ -62,7 +62,7 @@ export default function EventsPage() {
 
             <div className="flex-1">
               <h3 className="text-3xl font-bold text-gray-900 mb-4">
-                {upcomingEvent.title}
+               
               </h3>
 
               <p className="text-gray-600 mb-6 leading-relaxed">

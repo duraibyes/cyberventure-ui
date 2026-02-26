@@ -34,37 +34,20 @@ export default function Contact() {
 
               <div className="flex items-start gap-4">
                 <div className="p-3 bg-orange-100 rounded-lg">
-                  <Phone className="w-6 h-6 text-orange-600" strokeWidth={2} />
-                </div>
-                <div>
-                  <div className="font-semibold text-gray-900 mb-1">Phone</div>
-                  <a href="tel:+1-800-CYBER-01" className="text-gray-600 hover:text-orange-600 transition-colors">
-                    +1 (800) CYBER-01
-                  </a>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-orange-100 rounded-lg">
                   <MapPin className="w-6 h-6 text-orange-600" strokeWidth={2} />
                 </div>
                 <div>
                   <div className="font-semibold text-gray-900 mb-1">Address</div>
                   <p className="text-gray-600">
-                    123 Security Boulevard<br />
-                    San Francisco, CA 94105<br />
+                   
+                    San Francisco, CA <br />
                     United States
                   </p>
                 </div>
               </div>
             </div>
 
-            <div className="mt-8 p-6 bg-gradient-to-br from-orange-500 to-red-600 rounded-xl text-white">
-              <h4 className="font-bold text-lg mb-2">24/7 Security Operations Center</h4>
-              <p className="text-white/90 text-sm">
-                Our security team is available around the clock to respond to threats and support your organization.
-              </p>
-            </div>
+            
           </div>
 
           <div>
